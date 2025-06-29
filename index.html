@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JSFiddle oxqucdgw</title>
+
+  <style>
+    * {
+  font-family: sans-serif;
+}
+
+*.unselectable {
+  user-select: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid-container {
+  display: flex;
+  gap: 20px; /* Space between grid and reset button */
+  align-items: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  gap: 5px;
+}
+  </style>
+
+  
+</head>
+<body>
+  <div class="center unselectable">
+  <h1>Tic-Tac-Toe</h1>
+</div>
+
+<div class="center unselectable" id="grid-container">
+  <div id="grid"></div>
+  <button id="gameBtn" onclick="gameButton()">Start</button>
+</div>
+
+<div class="center" id="win-container">
+  <h1 id="winMsg"></h1>
+</div>
+
+  <script src="tictactoe.js">
+
+  </script>
+</body>
+</html>
